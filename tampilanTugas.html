@@ -32,28 +32,34 @@
     </nav>
 
     <section id="formugas">
-    <table border align="center" cellpadding="6" style="width: 40%" id="table">
-        <tr>
-            <td>
-                <h2 align="center"><b>Michael Mosses C</b></h2>
-                <h3 align="center">235314092</h3>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div id="pilihanContainer">
-                <form id="myForm">
-                    <label for="username">Nama :</label>
-                    <input type="text" id="username" placeholder="<Teks Nama>"><br><br>
-                    <label for="jPilihan">Jumlah Pilihan :</label>
-                    <input type="number" id="jPilihan" placeholder="<Jml>"><br><br>
-                    <label id="output"></label>
-                    <button type="button" id="OK">OK</button>
-                </form>
-                </div>
-            </td>
-        </tr>
-    </table>
+        <div class="container mt-4" id="formSection">
+            <form id="step1" class="p-3 rounded shadow-sm bg-white">
+              <h4 align="center">Form Tugas Data Diri</h4>
+              <div class="mb-3">
+                <label for="firstName" class="form-label">Nama Depan</label>
+                <input type="text" class="form-control" id="firstName" required />
+              </div>
+              <div class="mb-3">
+                <label for="lastName" class="form-label">Nama Belakang</label>
+                <input type="text" class="form-control" id="lastName" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="mb-3">
+                <label for="jmlHobi" class="form-label">Jumlah Hobi</label>
+                <input type="number" class="form-control" id="jmlHobi" min="1" required />
+              </div>
+              <button type="button" class="btn btn-primary" id="nextToHobi">OK</button>
+            </form>
+          
+            <form id="step2" class="p-3 rounded shadow-sm bg-white mt-3 d-none"></form>
+            <div id="step3" class="p-3 rounded shadow-sm bg-white mt-3 d-none"></div>
+            <div id="result" class="p-3 mt-3 fw-bold"></div>
+          </div>
+          
+      
 
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(8, 145, 199, 0.9)" fill-opacity="0.4" d="M0,64L14.1,64C28.2,64,56,64,85,64C112.9,64,141,64,169,58.7C197.6,53,226,43,254,42.7C282.4,43,311,53,339,85.3C367.1,117,395,171,424,170.7C451.8,171,480,117,508,90.7C536.5,64,565,64,593,85.3C621.2,107,649,149,678,181.3C705.9,213,734,235,762,234.7C790.6,235,819,213,847,202.7C875.3,192,904,192,932,176C960,160,988,128,1016,122.7C1044.7,117,1073,139,1101,144C1129.4,149,1158,139,1186,138.7C1214.1,139,1242,149,1271,138.7C1298.8,128,1327,96,1355,74.7C1383.5,53,1412,43,1426,37.3L1440,32L1440,320L1425.9,320C1411.8,320,1384,320,1355,320C1327.1,320,1299,320,1271,320C1242.4,320,1214,320,1186,320C1157.6,320,1129,320,1101,320C1072.9,320,1045,320,1016,320C988.2,320,960,320,932,320C903.5,320,875,320,847,320C818.8,320,791,320,762,320C734.1,320,706,320,678,320C649.4,320,621,320,593,320C564.7,320,536,320,508,320C480,320,452,320,424,320C395.3,320,367,320,339,320C310.6,320,282,320,254,320C225.9,320,198,320,169,320C141.2,320,113,320,85,320C56.5,320,28,320,14,320L0,320Z"></path></svg>

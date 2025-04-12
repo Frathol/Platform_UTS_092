@@ -74,3 +74,9 @@ button:hover {
 .hidden {
     display: none;
 }
+
+.bg-light.text-muted {
+    pointer-events: none;
+    opacity: 0.6;
+  }
+  
